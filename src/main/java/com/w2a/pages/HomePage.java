@@ -9,15 +9,19 @@ public class HomePage {
 	
 	public void goToSupport(){
 		
+		driver.findElement(By.cssSelector(".signin>a:nth-child(2)")).click();
+		
 	}
 	
 	public void goToLogin(){
 		
-		driver.findElement(By.cssSelector(".signup")).click();
+		driver.findElement(By.cssSelector(".signin")).click();
 		
 	}
 	
 	public void goToSignUp(){
+		
+		driver.findElement(By.cssSelector(".signup")).click();
 		
 	}
 	
