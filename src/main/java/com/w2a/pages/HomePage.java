@@ -7,6 +7,10 @@ public class HomePage {
 
 	WebDriver driver;
 	
+	public HomePage(WebDriver driver){
+		this.driver = driver;
+	}
+	
 	public void goToSupport(){
 		
 		driver.findElement(By.cssSelector(".signin>a:nth-child(2)")).click();
@@ -15,7 +19,7 @@ public class HomePage {
 	
 	public void goToLogin(){
 		
-		driver.findElement(By.cssSelector(".signin")).click();
+		driver.findElement(By.cssSelector("a.zh-login")).click();
 		
 	}
 	
